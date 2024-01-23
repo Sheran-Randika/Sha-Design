@@ -175,3 +175,161 @@ header {
     height: 82px;
     margin: 10px -4px;
   }
+
+  .packAndGoHead{
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+
+  .packAndGo {
+    position: relative;
+    width: 100%;
+  }
+
+
+  .packAndGoHead,
+  .packAndGoContent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .packAndGoContent{
+    margin-left: 200px;
+    margin-right: 200px;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+  }
+
+  .packAndGoContent1  , .packAndGoContent3{
+    width: 350px;
+    height: 500px;
+    border-radius: 10px;
+    background-color: #eaeaea;
+    text-align: center;
+    box-shadow:
+    5px 5px 10px #888888, /* Bottom right */
+    -5px -5px 10px #888888, /* Top left */
+    5px -5px 10px #888888, /* Top right */
+    -5px 5px 10px #888888; /* Bottom left */
+  }
+  .packAndGoContent2 {
+    position: relative;
+    width: 360px;
+    height: 550px;
+    border-radius: 10px;
+    background-color: #eaeaea;
+    text-align: center;
+    box-shadow:
+    5px 5px 10px #888888b7, /* Bottom right */
+    -5px -5px 10px #888888a7, /* Top left */
+    5px -5px 10px #888888ad, /* Top right */
+    -5px 5px 10px #888888ac; /* Bottom left */
+  }
+  .packAndGoContent1 img , .packAndGoContent3 img{
+    width: 350px;
+    justify-content: center;
+    border-radius: 10px 10px 0px 0px;
+  }
+  .packAndGoContent2 img{
+    justify-content: center;
+    align-items: center; 
+    justify-content: center; width: 360px;
+    margin: -20px ;
+    border-radius: 10px 10px 0px 0px;
+  }
+
+  .packAndGoContent {
+    margin-top: 200px; /* Adjust the margin to create space between the head and content */
+  } 
+  .PackAndGoBlueLine::before {
+    content: "";
+    position: absolute;
+    width: 1515px;
+    height: 260px;
+    background-color: #49c4aa;
+    bottom: -125px;
+    left: 50%; /* Center the line */
+  transform: translateX(-50%); /* Center the line horizontally */
+  z-index: -1;
+  }
+  .packAndGoContent p{
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 20px;
+  }
+  .PackAndGoBtn1 , .PackAndGoBtn3{
+    margin-right: 100px;
+    margin-left: 100px;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f9e03b;
+    color: #000;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  .PackAndGoBtn2{
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-top: 70px;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f9e03b;
+    color: #000;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  .values{
+    margin-top: 100px;
+  }
+  .valuesImg{
+    float: left;
+    margin-left: 150px;
+  }
+  .valuesImg img{
+    width: 417px;
+    height: 444px;
+    border-radius: 10px;
+  }
+  .valuesContain{
+    float: right;
+    width: 850px;
+  }
+  .valuesSpan{
+    font-weight: bold;
+    color: #000;
+    border: #49c4aa solid 2px;
+    width: 704px;
+    height: 70px;
+  }
+ .trans{
+    background-color: #49c4aa;
+    color: #ffffff;
+    height: 70px;
+    border: none;
+    position: relative;
+  width: 200px; /* Adjust the width of the rectangle */
+  font-size: 17px;
+
+  }
+  .trans::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -20px; /* Adjust the distance of the triangle from the right edge */ 
+    border-style: solid;
+    border-width: 35px 0 35px 20px; /* Adjust the size of the triangle */
+    border-color: transparent transparent transparent #49c4aa; /* Adjust the color of the triangle to match the rectangle background */
+  }
