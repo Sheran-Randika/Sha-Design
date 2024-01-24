@@ -49,9 +49,18 @@ header {
     text-decoration: none;
     color: #fff;
 }
-.headIcon{
-    width: 20px; 
-    height: 20px; 
+
+.navFirst .social-icons li{
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.navFirst .social-icons li i{
+  color: #f5e106;
+  font-size: 16px;
+}
+.navFirst .icon{
+  padding-top: 0px;
 }
 .mainImg{
     width: 100%;
@@ -127,6 +136,7 @@ header {
     justify-content: center;
     align-items: center;
     text-align: center;
+    line-height: 1.5;
   }
   .serviceBoxes{
     margin: 100px;
@@ -149,6 +159,7 @@ header {
     padding-left: 50px;
     padding-right: 50px;
     margin: 20px;
+    line-height: 1.5;
   }
   .serviceBtn{
     position: absolute;
@@ -188,8 +199,21 @@ header {
     position: relative;
     width: 100%;
   }
+  .packAndGoImg{
+    width: 100%;
+    height: 1000px;
+    clip-path: inset(10px 0 200px 0);
+  }
 
+  .packAndGoHead h1{
+    font-size: 33px;
+    font-weight: 700;
+  }
 
+  .packAndGoHead h2{
+    font-weight: lighter;
+    font-size: 35px;
+  }
   .packAndGoHead,
   .packAndGoContent {
     position: absolute;
@@ -221,16 +245,29 @@ header {
   .packAndGoContent2 {
     position: relative;
     width: 360px;
-    height: 550px;
+    height: 520px;
     border-radius: 10px;
     background-color: #eaeaea;
     text-align: center;
     box-shadow:
-    5px 5px 10px #888888b7, /* Bottom right */
     -5px -5px 10px #888888a7, /* Top left */
     5px -5px 10px #888888ad, /* Top right */
     -5px 5px 10px #888888ac; /* Bottom left */
   }
+
+  .packAndGoContent2::before {
+    content: "";
+    position: absolute;
+    bottom: -104px;
+    left: 50%; /* Position the triangle at the center */
+    transform: translateX(-50%); /* Center the triangle horizontally */
+    border-style: solid;
+    border-width: 80px 185px 30px 185px; /* Adjust the size of the triangle */
+    border-color: #eaeaea  transparent transparent transparent; /* Adjust the color of the triangle to match the rectangle background */
+    border-radius: 30px;
+}
+  
+
   .packAndGoContent1 img , .packAndGoContent3 img{
     width: 350px;
     justify-content: center;
@@ -239,13 +276,14 @@ header {
   .packAndGoContent2 img{
     justify-content: center;
     align-items: center; 
-    justify-content: center; width: 360px;
+    justify-content: center; 
+    width: 360px;
     margin: -20px ;
     border-radius: 10px 10px 0px 0px;
   }
 
   .packAndGoContent {
-    margin-top: 200px; /* Adjust the margin to create space between the head and content */
+    margin-top: 300px; /* Adjust the margin to create space between the head and content */
   } 
   .PackAndGoBlueLine::before {
     content: "";
@@ -262,6 +300,17 @@ header {
     padding-left: 50px;
     padding-right: 50px;
     margin: 20px;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  .packAndGoContent h4{
+    font-weight: lighter;
+    font-size: 20px;
+  }
+
+  .packAndGoContent h3{
+    font-weight: bold;
+    font-size: 20px;
   }
   .PackAndGoBtn1 , .PackAndGoBtn3{
     margin-right: 100px;
@@ -279,7 +328,7 @@ header {
   .PackAndGoBtn2{
     margin-right: 100px;
     margin-left: 100px;
-    margin-top: 70px;
+    margin-top: 30px;
     padding: 10px 30px;
     border: none;
     border-radius: 5px;
@@ -311,7 +360,7 @@ header {
     font-weight: bold;
     color: #000;
     border: #49c4aa solid 2px;
-    width: 704px;
+    width: 670px;
     height: 70px;
   }
  .trans{
@@ -333,3 +382,289 @@ header {
     border-width: 35px 0 35px 20px; /* Adjust the size of the triangle */
     border-color: transparent transparent transparent #49c4aa; /* Adjust the color of the triangle to match the rectangle background */
   }
+  .customer{
+    background-color: #e4e4e4;
+    color: #000000;
+    height: 70px;
+    border: none;
+    position: relative;
+  width: 200px; /* Adjust the width of the rectangle */
+  font-size: 17px;
+  z-index: -1;
+  }
+  .customer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -20px; /* Adjust the distance of the triangle from the right edge */ 
+    border-style: solid;
+    border-width: 35px 0 35px 20px; /* Adjust the size of the triangle */
+    border-color: transparent transparent transparent #e4e4e4; /* Adjust the color of the triangle to match the rectangle background */
+  }
+  .encourage{
+    background-color: #fffdfd;
+    color: #000000;
+    height: 70px;
+    border: none;
+    position: relative;
+  width: 200px; /* Adjust the width of the rectangle */
+  font-size: 17px;
+  z-index: -2;
+  margin-left: 40px;
+  }
+
+  .valuesContain p{
+    margin-top: 30px;
+    margin-right: 220px;
+    text-align: justify;
+    line-height: 1.7;
+  }
+  .valuesBtn{
+    margin-top: 30px;
+    margin-right: 200px;
+    margin-bottom: 30px;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f9e03b;
+    color: #000;
+    font-size: 12px;
+    font-weight: 200px;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  .values h2{
+    font-weight: bold;
+    font-size: 35px;
+    margin-top: 0px;
+    margin-bottom: 80px;
+  }
+
+  .OtherCountry{
+    width: 100%;
+    height: 750px;
+    background-color: #eaeaea;
+    margin-top: 600px;
+  }
+
+  .OtherCountry .arrow-button {
+    width: 30px;
+    height: 30px;
+    background-color: #49c4aa;
+    position: absolute;
+    top: 650%;
+    transform: translateY(50%);
+    cursor: pointer;
+    z-index: 1;
+    border-radius: 50%;
+  }
+  
+  .OtherCountry .left {
+    left: 0px;
+  }
+  
+  .OtherCountry .right {
+    right: 0px;
+  }
+
+  .OtherCountry .left::before,
+.OtherCountry .right::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.OtherCountry .right::before {
+  border-width: 8px 0 8px 13.9px; /* Adjust values for the desired arrow size */
+  border-color: transparent transparent transparent #fff; /* Adjust the color */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.OtherCountry .left::before {
+  border-width: 8px 13.9px 8px 0; /* Adjust values for the desired arrow size */
+  border-color: transparent #fff transparent transparent; /* Adjust the color */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+  .OtherCountry h2{
+    font-size: 35px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 80px;
+    font-weight: bold;
+  }
+
+  .OtherCountryContent{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 80px;
+  }
+
+  .OtherCountryContent1, .OtherCountryContent2, .OtherCountryContent3{
+
+    width: 350px;
+    height: 400px;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 10px;
+  }
+
+  .OtherCountryContent1 img, .OtherCountryContent2 img, .OtherCountryContent3 img{
+    width: 350px;
+    border-radius: 10px 10px 0px 0px;
+  }
+  .OtherCountryBtn{
+    margin-top: -20px;
+    margin-right: 100px;
+    margin-left: 100px;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f9e03b;
+    color: #000;
+    font-size: 12px;
+    font-weight: 200px;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: flex;
+    position: absolute;
+  }
+
+  .OtherCountry h3{
+    margin: 50px;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .paginationcontainer {
+    text-align: center;
+    margin-top: 70px; 
+  }
+  
+  .paginationlink {
+    display: inline-block;
+    width: 12px; 
+    height: 12px; 
+    background-color: white; 
+    border-radius: 50%; 
+    margin: 0 5px; 
+    cursor: pointer;
+  }
+  
+  .paginationlink.active {
+    background-color: #49c4aa; 
+  }
+  
+  .contactUs{
+    position: relative;
+  }
+  .contactUs .ImageC{
+    width: 100%;
+  }
+  .contactUsDetails{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+
+  .contactUsHead{
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: #fffdfd;
+  }
+
+  .contactUsHead {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  .contactUsHead h3{
+    font-weight: lighter;
+  }
+
+  .contactUsDetails1{
+    width: 260px;
+  }
+  .contactUsDetails1Img{
+    float: left;
+  }
+  .contactUsDetails1Text{
+    padding-left: 80px;
+    text-align: left;
+    float: right;
+    width: 190px;
+    position: absolute;
+    font-size: 14px;
+    color: #262626;
+  }
+
+  .contactUsDetails1Text h2{
+    text-transform: uppercase;
+  }
+
+  .contactUsDetails1Text p{
+    line-height: 1.7;
+  }
+
+  .contactUs .social-icons{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 600px;
+    margin-right: 600px;
+
+  }
+
+  .contactUs .social-icons .icon {
+  font-size: 30px; 
+  padding: 20px;
+  margin: 10px;
+  color: #353535; 
+  border: 2px solid #fff200;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  justify-content: center;
+}
+.contactUs .social-icons .icon:hover {
+  color: #e74c3c; 
+}
+
+.footer{
+  width: 100%;
+  height: 200px;
+  background-color: #f0d839;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+}
+.footer p{
+  width:325px ;
+  line-height: 1.7;
+}
