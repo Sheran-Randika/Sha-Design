@@ -66,6 +66,38 @@ header {
     width: 100%;
     background-size: cover;
 }
+
+.mainText{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: left;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: monospace;
+    line-height: 0.5;
+}
+.mainText H1{
+  font-size: 76PX;
+}
+.mainText h3{
+  text-transform: uppercase;
+}
+.mainBtn{
+    margin-top: 10px;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #49c4aa;
+    color: #000;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+
+}
 .mainTitle{
     font-weight: bold;
 }
@@ -131,8 +163,8 @@ header {
   .serviceContent{
     margin-top: 100px;
     margin-bottom: 100px;
-    margin-left: 400px;
-    margin-right: 400px;
+    margin-left: 500px;
+    margin-right: 500px;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -186,7 +218,13 @@ header {
     height: 82px;
     margin: 10px -4px;
   }
-
+  .arrow-left, .arrow-right{
+    font-size: 50px;
+    font-weight: bold;
+    position: relative;
+    cursor: pointer;
+    color: #515050;
+  }
   .packAndGoHead{
     margin-top: 50px;
     justify-content: center;
@@ -237,10 +275,10 @@ header {
     background-color: #eaeaea;
     text-align: center;
     box-shadow:
-    5px 5px 10px #888888, /* Bottom right */
-    -5px -5px 10px #888888, /* Top left */
-    5px -5px 10px #888888, /* Top right */
-    -5px 5px 10px #888888; /* Bottom left */
+    5px 5px 10px #888888, 
+    -5px -5px 10px #888888, 
+    5px -5px 10px #888888, 
+    -5px 5px 10px #888888; 
   }
   .packAndGoContent2 {
     position: relative;
@@ -250,20 +288,20 @@ header {
     background-color: #eaeaea;
     text-align: center;
     box-shadow:
-    -5px -5px 10px #888888a7, /* Top left */
-    5px -5px 10px #888888ad, /* Top right */
-    -5px 5px 10px #888888ac; /* Bottom left */
+    -5px -5px 10px #888888a7, 
+    5px -5px 10px #888888ad, 
+    -5px 5px 10px #888888ac; 
   }
 
   .packAndGoContent2::before {
     content: "";
     position: absolute;
     bottom: -104px;
-    left: 50%; /* Position the triangle at the center */
-    transform: translateX(-50%); /* Center the triangle horizontally */
+    left: 50%; 
+    transform: translateX(-50%); 
     border-style: solid;
-    border-width: 80px 185px 30px 185px; /* Adjust the size of the triangle */
-    border-color: #eaeaea  transparent transparent transparent; /* Adjust the color of the triangle to match the rectangle background */
+    border-width: 80px 185px 30px 185px; 
+    border-color: #eaeaea  transparent transparent transparent; 
     border-radius: 30px;
 }
   
@@ -283,7 +321,7 @@ header {
   }
 
   .packAndGoContent {
-    margin-top: 300px; /* Adjust the margin to create space between the head and content */
+    margin-top: 300px; 
   } 
   .PackAndGoBlueLine::before {
     content: "";
@@ -292,8 +330,8 @@ header {
     height: 260px;
     background-color: #49c4aa;
     bottom: -125px;
-    left: 50%; /* Center the line */
-  transform: translateX(-50%); /* Center the line horizontally */
+    left: 50%; 
+  transform: translateX(-50%); 
   z-index: -1;
   }
   .packAndGoContent p{
@@ -396,10 +434,10 @@ header {
     content: "";
     position: absolute;
     top: 0;
-    right: -20px; /* Adjust the distance of the triangle from the right edge */ 
+    right: -20px; 
     border-style: solid;
-    border-width: 35px 0 35px 20px; /* Adjust the size of the triangle */
-    border-color: transparent transparent transparent #e4e4e4; /* Adjust the color of the triangle to match the rectangle background */
+    border-width: 35px 0 35px 20px; 
+    border-color: transparent transparent transparent #e4e4e4; 
   }
   .encourage{
     background-color: #fffdfd;
@@ -407,7 +445,7 @@ header {
     height: 70px;
     border: none;
     position: relative;
-  width: 200px; /* Adjust the width of the rectangle */
+  width: 200px;
   font-size: 17px;
   z-index: -2;
   margin-left: 40px;
@@ -453,7 +491,7 @@ header {
     height: 30px;
     background-color: #49c4aa;
     position: absolute;
-    top: 650%;
+    top: 560%;
     transform: translateY(50%);
     cursor: pointer;
     z-index: 1;
@@ -462,10 +500,14 @@ header {
   
   .OtherCountry .left {
     left: 0px;
+    font-size: 25px;
+    color: #ffffff;
   }
   
   .OtherCountry .right {
     right: 0px;
+    font-size: 25px;
+    color: #ffffff;
   }
 
   .OtherCountry .left::before,
@@ -478,19 +520,15 @@ header {
 }
 
 .OtherCountry .right::before {
-  border-width: 8px 0 8px 13.9px; /* Adjust values for the desired arrow size */
-  border-color: transparent transparent transparent #fff; /* Adjust the color */
+  border-color: transparent transparent transparent #ffffff00; 
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .OtherCountry .left::before {
-  border-width: 8px 13.9px 8px 0; /* Adjust values for the desired arrow size */
-  border-color: transparent #fff transparent transparent; /* Adjust the color */
+  border-color: transparent #ffffff00 transparent transparent; 
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
 }
 
   .OtherCountry h2{
