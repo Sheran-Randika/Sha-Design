@@ -326,7 +326,7 @@ header {
   .PackAndGoBlueLine::before {
     content: "";
     position: absolute;
-    width: 1515px;
+    width: 127%;
     height: 260px;
     background-color: #49c4aa;
     bottom: -125px;
@@ -941,10 +941,6 @@ header {
 }
 
 @media screen and (max-width:950px) {
-
-  .mainText{
-    top: 20%;
-  }
   .aboutUs{
     flex-direction: column;
   }
@@ -1024,7 +1020,6 @@ header {
     }
     .OtherCountry{
       flex-direction: column;
-      margin-top: -600px;
     }
     .values h2{
       text-align: center;
@@ -1047,6 +1042,7 @@ header {
     }
   .OtherCountry{
       height: 1500px;
+      margin-top: 100px;
     }
   .OtherCountry .OtherCountryContent{
     flex-direction: column;
@@ -1112,9 +1108,6 @@ header {
   .valuesSpan{
     margin-left: 10px;
   }
-  .OtherCountry{
-    margin-top: -400px;
-  }
 }
 
 .mobileNav{
@@ -1157,7 +1150,7 @@ header {
   .mobileNav{
     display: block;
     width: 80%;
-
+    z-index: 999;
   }
   .logo{
     display: none;
@@ -1227,6 +1220,9 @@ header {
 .menu li a:hover {
   text-decoration: underline;
 }
+.OtherCountry{
+  margin-top: 200px;
+}
 
 .aboutContain{
   top: 70%;
@@ -1252,17 +1248,67 @@ text-align: center;}
 .serviceContent{
   margin-top: 150px;
 }
+.PackAndGoBlueLine::before {
+  
+  width: 155%;
+}
 
 }
 
-@media screen and (max-width:550px){
-  .mainText{
-    top: 10%;
-  }
+@media screen and (max-width:450px){
+
   .mainText h1{
     font-size: 20px;
   }
   .mainText h3{
     font-size: 15px;
   }
+  .values{
+    margin-top: 0px;
+  }
+  .serviceBox1, .serviceBox2, .serviceBox3 {
+    width: 350px;
+}
+.OtherCountry{
+  margin-top: 130px;
+}
+.valuesSpan{
+  flex-direction: column;
+  width: 80%;
+}
+.valuesContain p{
+  margin-top: 200px;
+}
+.trans{
+  width: 100%;
+}
+.customer{
+  width: 100%;
+}
+.encourage{
+  width: 100%;
+  border: 1px solid #49c4aa;
+  margin-left: 3px;
+}
+.encourage::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -20px;
+  border-style: solid;
+  border-width: 35px 0 35px 20px;
+  border-color: transparent transparent transparent #49c4aa;
+}
+.PackAndGoBlueLine::before {
+  width: 110%;
+}
+.valuesBtn{
+  margin-top: 5px;
+}
+.valuesImg {
+  margin: auto;
+}
+.valuesContain{
+  float: left;
+}
 }
