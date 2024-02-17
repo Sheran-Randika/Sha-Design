@@ -1,11 +1,13 @@
+body, html {
+  margin: 0;
+  padding: 0;
+}
 body {
-    margin: 0;
-    padding: 0;
     font-family: 'Arial', sans-serif;
 }
 header {
     width: 100%;
-    background-color: #0d08087a;
+    background-color: #0d0808bd;
     z-index: 999;
     position: fixed;
 }
@@ -268,6 +270,12 @@ header {
     z-index: 1;
   }
 
+  .packAndGoContentinner{
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+  }
+
   .packAndGoContent1  , .packAndGoContent3{
     width: 350px;
     height: 500px;
@@ -322,17 +330,18 @@ header {
 
   .packAndGoContent {
     margin-top: 300px; 
+    z-index: 2;
   } 
   .PackAndGoBlueLine::before {
     content: "";
     position: absolute;
-    width: 127%;
+    width: 100%;
     height: 260px;
     background-color: #49c4aa;
-    bottom: -125px;
+    bottom: 105px;
     left: 50%; 
   transform: translateX(-50%); 
-  z-index: -1;
+  z-index: 1;
   }
   .packAndGoContent p{
     padding-left: 50px;
@@ -705,6 +714,12 @@ header {
   width:325px ;
   line-height: 1.7;
 }
+@media screen and (max-width: 1500px){
+.navContent{
+  margin-right: 10px;
+  width: 75%;
+}
+}
 
 @media screen and (max-width: 1200px) {
 
@@ -941,6 +956,7 @@ header {
 }
 
 @media screen and (max-width:950px) {
+
   .aboutUs{
     flex-direction: column;
   }
@@ -1008,10 +1024,10 @@ header {
     }
     .values{
       flex-direction: column;
-      height: 100vh;
+      height: 750px;
     }
     .valuesImg{
-      width: 100%;
+      width: 90%;
       text-align: center;
     }
     .valuesContain{
@@ -1081,7 +1097,7 @@ header {
 
 @media screen and (max-width:746px){
   .mainText{
-    top: 15%;
+    top: 10%;
   }
   .mainText h1{
     font-size: 30px;
@@ -1093,20 +1109,45 @@ header {
     flex-direction: column;
     margin: 20px;
     top: 200px;
+    align-items: center;
   }
-  .packAndGoContent1 , .packAndGoContent3{
-    display: none;
-  }
-  .packAndGoContent2{
-    width: 100%;
+  .packAndGoContent1 , .packAndGoContent3, .packAndGoContent2{
+    width:60%;
     height: auto;
+    margin-top: 100px;
+  }
+  .packAndGoImg{
+    height: 2200px;
+    width: 100%;
+    background-image: url('../images/bg1.jpg'); /* Add your image URL here */
+    background-repeat: repeat;
+  }
+  .packAndGoContent1 p , .packAndGoContent3 p{
+    margin: 20px;
+  }
+  .PackAndGoBtn1 , .PackAndGoBtn2 , .PackAndGoBtn3{
+    margin: 20px;
+  }
+  .packAndGoImg img{
+    display: none;
   }
   .contactUsHead{
     font-size: 18px;
     margin-top: 15px;
   }
   .valuesSpan{
-    margin-left: 10px;
+    width: 70%;
+  }
+  .valuesSpan button{
+    font-size: 12px;
+    margin: 0px;
+    padding: 0px;
+  }
+  .trans,.customer{
+    width:118px;
+  }
+  .encourage{
+    width: 170px;
   }
 }
 
@@ -1250,11 +1291,39 @@ text-align: center;}
 }
 .PackAndGoBlueLine::before {
   
-  width: 155%;
+  width: 100%;
 }
-
+.mainTopic{
+  margin-left: 20px;
+  margin-right: 20px;
 }
-
+.valuesSpan{
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 10px;
+  width: 400px;
+}
+.trans{
+  width: 90px;
+}
+.customer{
+  width: 120px;
+  padding-right: 0px;
+  margin-right: 0px;
+}
+.encourage{
+  padding-right: 0px;
+  margin-right: 0px;
+}
+.packAndGoContent p{
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 10px;
+}
+.packAndGoContent h4{
+  font-size: 15px;
+}
+}
 @media screen and (max-width:450px){
 
   .mainText h1{
@@ -1270,7 +1339,7 @@ text-align: center;}
     width: 350px;
 }
 .OtherCountry{
-  margin-top: 130px;
+  margin-top: 230px;
 }
 .valuesSpan{
   flex-direction: column;
@@ -1300,15 +1369,26 @@ text-align: center;}
   border-color: transparent transparent transparent #49c4aa;
 }
 .PackAndGoBlueLine::before {
-  width: 110%;
+
+  width: 100%;
 }
 .valuesBtn{
   margin-top: 5px;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 .valuesImg {
   margin: auto;
 }
 .valuesContain{
   float: left;
+}
+.aboutImgLeft img {
+  width: 90%;
+  padding: 20px;
+}
+.aboutContain {
+  top: 70%;
+  width: 90%;
 }
 }
