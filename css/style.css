@@ -70,7 +70,7 @@ header {
 
 .mainText{
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 30%;
     transform: translate(-50%, -50%);
     color: #fff;
@@ -782,7 +782,7 @@ header {
   
   .mainText{
     position: absolute;
-    top: 30%;
+    top: 20%;
     left: 40%;
     transform: translate(-50%, -50%);
     color: #fff;
@@ -1097,7 +1097,7 @@ header {
 
 @media screen and (max-width:746px){
   .mainText{
-    top: 10%;
+    top: 20%;
   }
   .mainText h1{
     font-size: 30px;
@@ -1188,6 +1188,9 @@ header {
 }
 
 @media screen and (max-width:550px){
+  .mainText{
+    top: 12%;
+  }
   header{
     background-color: #000;
     height: 50px;
