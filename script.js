@@ -6,11 +6,11 @@ window.addEventListener('scroll', function() {
     let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
     if (scrollTop > lastScrollTop) {
-        header.style.top = '-200px'; // Hide the header when scrolling down
-        mobileNav.style.display = 'none'; // Hide the mobileNav when scrolling down
+        header.style.top = '-200px';
+        mobileNav.style.display = 'none'; 
     } else {
-        header.style.top = '0'; // Show the header when scrolling up
-        mobileNav.style.display = 'block'; // Show the mobileNav when scrolling up
+        header.style.top = '0'; 
+        mobileNav.style.display = 'block'; 
     }
     lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
 });
