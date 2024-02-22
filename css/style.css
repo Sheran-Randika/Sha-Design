@@ -845,7 +845,7 @@ header {
     float: right;
   }
   .navFirst a,  .navThird a{
-    font-family: monospace;
+    font-family: Montserrat;
     display: block;
     text-align: center;
     padding: 14px 16px;
@@ -878,7 +878,7 @@ header {
     text-align: left;
     font-size: 20px;
     font-weight: bold;
-    font-family: monospace;
+    font-family: Montserrat;
     line-height: 0.7;
   }
   .mainText H1{
