@@ -759,11 +759,9 @@ header {
   .contactUs .social-icons{
     display: flex;
     position: relative;
-    justify-content: space-between;
+    justify-content: center;
     margin-top: 50px;
     margin-bottom: 50px;
-    margin-left: 600px;
-    margin-right: 600px;
 
   }
 
@@ -1046,10 +1044,6 @@ header {
   .contactUsDetails1Text{
     padding-left: 50px;
   }
-  .contactUs .social-icons{
-    margin-left: 300px;
-    margin-right: 300px;
-  }
 }
 
 @media screen and (max-width:950px) {
@@ -1162,10 +1156,6 @@ header {
     height: 300px;
     align-items: center;
     text-align: center;
-  }
-  .contactUs .social-icons{
-    margin-left: 100px;
-    margin-right: 100px;
   }
 
 }
