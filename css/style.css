@@ -3,7 +3,7 @@ body, html {
   padding: 0;
 }
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Montserrat;
 }
 
 header {
@@ -44,7 +44,7 @@ header {
     float: right;
 }
 .navFirst a,  .navThird a{
-    font-family: monospace;
+    font-family: Montserrat;
     display: block;
     text-align: center;
     padding: 14px 16px;
@@ -64,9 +64,21 @@ header {
 .navFirst .icon{
   padding-top: 0px;
 }
+#main{
+  position: relative;
+    overflow: hidden;
+}
+.slider{
+  display: flex;
+  transition: transform 1s ease-in-out;
+}
 .mainImg{
     width: 100%;
-    background-size: cover;
+    height: auto;
+    transition: opacity 5s ease-in-out;
+}
+.mainImg.active {
+  opacity: 1;
 }
 
 .mainText{
@@ -78,7 +90,7 @@ header {
     text-align: left;
     font-size: 40px;
     font-weight: bold;
-    font-family: monospace;
+    font-family: Montserrat;
     line-height: 0.5;
 }
 .mainText H1{
@@ -98,10 +110,12 @@ header {
     font-weight: bold;
     text-transform: uppercase;
     cursor: pointer;
+    font-family: Montserrat;
 
 }
 .mainTitle{
     font-weight: bold;
+    font-family: Montserrat;
 }
 .mainTopic{
     justify-content: center;
@@ -111,6 +125,9 @@ header {
     margin-left: 350px;
     margin-right: 350px;
     line-height: 1.7;
+}
+.mainPara{
+  font-family: lato;
 }
 .aboutUs {
     margin-top: 100px;
@@ -141,11 +158,13 @@ header {
     top: 50%; 
     left: 50%;
     transform: translate(-59%, -50%); 
+    font-family: Montserrat;
   }
   .aboutContain p{
     text-align: justify;
     text-align-last: left;
     width: 547px;
+    font-family: lato;
   }
 
   .aboutBtn{
@@ -161,6 +180,7 @@ header {
     font-weight: bold;
     text-transform: uppercase;
     cursor: pointer;
+    font-family: Montserrat;
   }
 
   .serviceContent{
@@ -172,6 +192,9 @@ header {
     align-items: center;
     text-align: center;
     line-height: 1.5;
+  }
+  .serviceContent p{
+    font-family: lato;
   }
   .services{
     position: relative;
@@ -230,6 +253,7 @@ header {
     padding-right: 50px;
     margin: 20px;
     line-height: 1.5;
+    font-family: lato;
   }
   .serviceBtn{
   position: relative;
@@ -243,7 +267,7 @@ header {
   font-weight: bold;
   text-transform: uppercase;
   cursor: pointer;
-
+  font-family: Montserrat;
   }
   .serviceBoxes h2{
     background-color: #f0d839;
@@ -281,12 +305,12 @@ header {
   }
 
   .packAndGoHead h1{
-    font-size: 33px;
-    font-weight: 700;
+    font-size: 34px;
+    font-weight: 900;
   }
 
   .packAndGoHead h2{
-    font-weight: lighter;
+    font-weight: 500;
     font-size: 35px;
   }
   .packAndGoHead,
@@ -384,14 +408,15 @@ header {
     margin: 20px;
     font-size: 15px;
     line-height: 1.5;
+    font-family: lato;
   }
   .packAndGoContent h4{
-    font-weight: lighter;
+    font-weight: 500;
     font-size: 20px;
   }
 
   .packAndGoContent h3{
-    font-weight: bold;
+    font-weight: 900;
     font-size: 20px;
   }
   .PackAndGoBtn1 , .PackAndGoBtn3{
@@ -406,6 +431,7 @@ header {
     font-weight: bold;
     text-transform: uppercase;
     cursor: pointer;
+    font-family: Montserrat;
   }
   .PackAndGoBtn2{
     margin-right: 100px;
@@ -444,6 +470,7 @@ header {
     border: #49c4aa solid 2px;
     width: 670px;
     height: 70px;
+    font-family: Montserrat;
   }
  .trans{
     background-color: #49c4aa;
@@ -453,6 +480,7 @@ header {
     position: relative;
   width: 200px; /* Adjust the width of the rectangle */
   font-size: 17px;
+  font-family: Montserrat;
 
   }
   .trans::before {
@@ -473,6 +501,7 @@ header {
   width: 200px; /* Adjust the width of the rectangle */
   font-size: 17px;
   z-index: -1;
+  font-family: Montserrat;
   }
   .customer::before {
     content: "";
@@ -493,6 +522,7 @@ header {
   font-size: 17px;
   z-index: -2;
   margin-left: 40px;
+  font-family: Montserrat;
   }
 
   .valuesContain p{
@@ -500,6 +530,7 @@ header {
     margin-right: 220px;
     text-align: justify;
     line-height: 1.7;
+    font-family: lato;
   }
   .valuesBtn{
     margin-top: 30px;
@@ -514,6 +545,7 @@ header {
     font-weight: 200px;
     text-transform: uppercase;
     cursor: pointer;
+    font-family: Montserrat;
   }
 
   .values h2{
@@ -632,6 +664,7 @@ header {
     cursor: pointer;
     display: flex;
     position: absolute;
+    font-family: Montserrat;
   }
 
   .OtherCountry h3{
@@ -671,7 +704,7 @@ header {
     align-items: center;
     text-align: center;
     display: flex;
-    margin-left: 200px;
+    margin-left: 250px;
     margin-right: 200px;
   }
 
@@ -709,14 +742,17 @@ header {
     position: absolute;
     font-size: 14px;
     color: #262626;
+    font-family: Montserrat;
   }
 
   .contactUsDetails1Text h2{
     text-transform: uppercase;
+    font-family: lato;
   }
 
   .contactUsDetails1Text p{
     line-height: 1.7;
+    font-family: lato;
   }
 
   .contactUs .social-icons{
@@ -754,6 +790,7 @@ header {
   justify-content: center;
   align-items: center;
   text-align: center;
+  font-family: lato;
 
 }
 .footer p{
