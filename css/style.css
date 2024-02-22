@@ -921,7 +921,7 @@ header {
   }
   .serviceContent{
     margin-top: 100px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     margin-left: 100px;
     margin-right: 100px;
   }
@@ -943,6 +943,9 @@ header {
     padding-right: 25px;
     margin: 20px;
     line-height: 1.5;
+  }
+  .serviceBox2 .serviceBtn{
+    bottom: -4px;
   }
   .packAndGoContent1  , .packAndGoContent3{
     width: 300px;
@@ -1090,7 +1093,7 @@ header {
       line-height: 1.5;
     }
     .packAndGoContent1 h4 , .packAndGoContent3 h4{
-      font-weight: lighter;
+      font-weight: 500;
       font-size: 15px;
     }
     .packAndGoContent1 h3 , .packAndGoContent3 h3{
@@ -1156,6 +1159,9 @@ header {
     height: 300px;
     align-items: center;
     text-align: center;
+  }
+  .serviceBox2 .serviceBtn{
+    bottom: 20px;
   }
 
 }
