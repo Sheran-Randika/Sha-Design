@@ -187,8 +187,8 @@ header {
   .serviceContent{
     margin-top: 100px;
     margin-bottom: 100px;
-    margin-left: 500px;
-    margin-right: 500px;
+    margin-left: 300px;
+    margin-right: 300px;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -243,22 +243,22 @@ header {
     scroll-snap-align: start;
     flex-direction: column;
     background-color: #eaeaea;
-    width: 370px;
-    height: 500px;
+    width: 326px;
+    height: 529px;
     border-radius: 15px;
     position: relative;
     text-align: center;
   }
   .serviceBox1 p,.serviceBox2 p,.serviceBox3 p{
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 23px;
+    padding-right: 23px;
     margin: 20px;
     line-height: 1.5;
     font-family: lato;
   }
   .serviceBtn{
   position: relative;
-  bottom: -13px; 
+  bottom: -30px; 
   padding: 10px 30px;
   border: none;
   border-radius: 5px;
@@ -297,7 +297,7 @@ header {
   .packAndGo {
     position: relative;
     width: 100%;
-    margin-top: 135px;
+    margin-top: 105px;
   }
   .packAndGoImg{
     width: 100%;
@@ -323,8 +323,8 @@ header {
   }
 
   .packAndGoContent{
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 80px;
+    margin-right: 80px;
     display: flex;
     justify-content: center;
     z-index: 1;
@@ -450,7 +450,7 @@ header {
   }
 
   .values{
-    margin-top: 100px;
+    margin-top: 50px;
   }
   .valuesImg{
     float: left;
@@ -990,8 +990,8 @@ header {
     justify-content: center;
     align-items: center; 
     justify-content: center; 
-    width: 297px;
-    margin: -20px ;
+    width: 319px;
+    margin: -30px ;
     border-radius: 10px 10px 0px 0px;
   }
   .packAndGoImg img{
