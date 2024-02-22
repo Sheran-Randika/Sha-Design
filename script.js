@@ -11,7 +11,6 @@ window.addEventListener('scroll', function() {
     const isScrollingDown = scrollTop > lastScrollTop;
 
     if (window.innerWidth <= 746) {
-        // For mobile view
         header.style.backgroundColor = isScrollingDown ? '#000' : '#0d0808bd';
         mobileNav.style.display = isScrollingDown ? 'block' : 'block'; 
         navFirst.style.display = isScrollingDown ? 'none' : 'none';
@@ -19,7 +18,6 @@ window.addEventListener('scroll', function() {
         header.style.height = isScrollingDown ? '58px' : '58px';
         logo.style.width = isScrollingDown ? '40px' : '40px';
     } else {
-        // For normal view
         header.style.backgroundColor = isScrollingDown ? '#000' : '#0d0808bd';
         navFirst.style.display = isScrollingDown ? 'none' : 'block';
         navSecond.style.display = isScrollingDown ? 'none' : 'block';
@@ -36,7 +34,6 @@ hamburgerMenu.addEventListener('click', () => {
     menu.classList.toggle('show');
 });
 
-// Ensure hamburger menu icon remains visible in mobile view
 window.addEventListener('resize', function() {
     if (window.innerWidth <= 746) {
         hamburgerMenu.style.display = 'block';
@@ -68,6 +65,25 @@ arrowBtnF.forEach(btn => {
 
     });
       });
+
+const slider = document.querySelector('.slider');
+const images = document.querySelectorAll('.mainImg');
+const maxTranslate = 300;
+
+let index = 0;
+
+function nextImage() {
+    index = (index + 1) % images.length;
+    const translatePercentage = Math.min(index * 100, maxTranslate);
+    slider.style.transform = `translateX(-${translatePercentage}%)`;
+}
+
+// Show the first image initially
+nextImage();
+
+// Auto-advance the slider every 3 seconds (adjust as needed)
+setInterval(nextImage, 3000);
+
       
 
     

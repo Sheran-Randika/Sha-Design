@@ -83,8 +83,8 @@ header {
 
 .mainText{
     position: absolute;
-    top: 40%;
-    left: 30%;
+    top: 45%;
+    left: 35%;
     transform: translate(-50%, -50%);
     color: #fff;
     text-align: left;
@@ -871,7 +871,7 @@ header {
   
   .mainText{
     position: absolute;
-    top: 25%;
+    top: 50%;
     left: 40%;
     transform: translate(-50%, -50%);
     color: #fff;
@@ -1297,7 +1297,7 @@ header {
   text-decoration: none;
 }
   .mainText{
-    top: 20%;
+    top: 50%;
   }
   .mainText h1{
     font-size: 30px;
@@ -1358,7 +1358,7 @@ header {
 
 @media screen and (max-width:550px){
   .mainText{
-    top: 15%;
+    top: 55%;
   }
 .OtherCountry{
   margin-top: 200px;
@@ -1429,7 +1429,7 @@ text-align: center;}
 @media screen and (max-width:450px){
 
   .mainText{
-    top: 10%;
+    top: 55%;
   }
   .mainText h1{
     font-size: 20px;
@@ -1502,5 +1502,8 @@ text-align: center;}
 .aboutContain {
   top: 70%;
   width: 90%;
+}
+.contactUsDetails{
+  margin-left: 242px;
 }
 }
