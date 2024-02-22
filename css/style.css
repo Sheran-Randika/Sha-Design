@@ -5,6 +5,7 @@ body, html {
 body {
     font-family: 'Arial', sans-serif;
 }
+
 header {
     width: 100%;
     background-color: #0d0808bd;
@@ -70,7 +71,7 @@ header {
 
 .mainText{
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 30%;
     transform: translate(-50%, -50%);
     color: #fff;
@@ -172,22 +173,57 @@ header {
     text-align: center;
     line-height: 1.5;
   }
-  .serviceBoxes{
-    margin: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
+  .services{
     position: relative;
-   
+    width: 100%;
+    overflow: hidden;
+  }
+  .arrow-left, .arrow-right{
+    height: 50px;
+    width: 50px;
+    background: rgb(255, 254, 254);
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    top: 67%;
+    transform: translateY(-50%);
+    z-index: 5;
+  }
+  .arrow-left{
+    left: 20px;
+  }
+  .arrow-right{
+    right: 20px;
+  }
+  .services .serviceBoxes{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    margin-left: 150px;
+    margin-right: 150px;
+    height: 600px;
+  }
+  .serviceBoxes::-webkit-scrollbar {
+    display: none;
+  }
+  .serviceBoxes .no-transition {
+    scroll-behavior: auto;
   }
   .serviceBox1,.serviceBox2,.serviceBox3{
-    
+    scroll-snap-align: start;
+    flex-direction: column;
     background-color: #eaeaea;
     width: 370px;
     height: 500px;
     border-radius: 15px;
     position: relative;
+    text-align: center;
   }
   .serviceBox1 p,.serviceBox2 p,.serviceBox3 p{
     padding-left: 50px;
@@ -196,19 +232,17 @@ header {
     line-height: 1.5;
   }
   .serviceBtn{
-    position: absolute;
-  bottom: -13px; /* Adjust the distance from the bottom as needed */
-  left: 50%;
-  transform: translateX(-50%);
-    padding: 10px 30px;
-    border: none;
-    border-radius: 5px;
-    background-color: #49c4aa;
-    color: #000;
-    font-size: 12px;
-    font-weight: bold;
-    text-transform: uppercase;
-    cursor: pointer;
+  position: relative;
+  bottom: -13px; 
+  padding: 10px 30px;
+  border: none;
+  border-radius: 5px;
+  background-color: #49c4aa;
+  color: #000;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
 
   }
   .serviceBoxes h2{
@@ -220,13 +254,13 @@ header {
     height: 82px;
     margin: 10px -4px;
   }
-  .arrow-left, .arrow-right{
+  /* .arrow-left, .arrow-right{
     font-size: 50px;
     font-weight: bold;
     position: relative;
     cursor: pointer;
     color: #515050;
-  }
+  } */
   .packAndGoHead{
     margin-top: 50px;
     justify-content: center;
@@ -238,6 +272,7 @@ header {
   .packAndGo {
     position: relative;
     width: 100%;
+    margin-top: 135px;
   }
   .packAndGoImg{
     width: 100%;
@@ -493,6 +528,8 @@ header {
     height: 750px;
     background-color: #eaeaea;
     margin-top: 600px;
+    position: relative;
+    overflow: hidden;
   }
 
   .OtherCountry .arrow-button {
@@ -500,10 +537,12 @@ header {
     height: 30px;
     background-color: #49c4aa;
     position: absolute;
-    transform: translateY(50%);
+    transform: translateY(-50%);
     cursor: pointer;
     z-index: 1;
     border-radius: 50%;
+    top: 50%;
+    text-align: center;
   }
   
   .OtherCountry .left {
@@ -550,14 +589,21 @@ header {
 
   .OtherCountryContent{
     display: flex;
-    justify-content: space-between;
-    margin-left: 200px;
-    margin-right: 200px;
+    justify-content: center;
     margin-top: 80px;
+    overflow-x: auto;
+    gap: 20px;
+    scroll-behavior: smooth;
+  }
+  .OtherCountryContent::-webkit-scrollbar {
+    display: none;
+  }
+  .OtherCountryContent .no-transition {
+    scroll-behavior: auto;
   }
 
   .OtherCountryContent1, .OtherCountryContent2, .OtherCountryContent3{
-
+    scroll-snap-align: start;
     width: 350px;
     height: 400px;
     align-items: center;
@@ -719,6 +765,12 @@ header {
   margin-right: 10px;
   width: 75%;
 }
+.valuesImg{
+  margin-left: 10px;
+}
+.valuesContain{
+  width: 750px;
+}
 }
 
 @media screen and (max-width: 1200px) {
@@ -782,7 +834,7 @@ header {
   
   .mainText{
     position: absolute;
-    top: 35%;
+    top: 25%;
     left: 40%;
     transform: translate(-50%, -50%);
     color: #fff;
@@ -838,9 +890,7 @@ header {
     margin-right: 100px;
   }
   .serviceBoxes{
-    margin: 10px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     text-align: center;
     position: relative;
@@ -905,6 +955,15 @@ header {
     width: 297px;
     margin: -20px ;
     border-radius: 10px 10px 0px 0px;
+  }
+  .packAndGoImg img{
+    display: none;
+  }
+  .packAndGoImg{
+    width: 100%;
+    background: url('../images/bg1.jpg') no-repeat center; 
+    background-size: cover;
+    background-attachment: fixed;
   }
 
   .valuesImg img{
@@ -976,9 +1035,6 @@ header {
       position: relative;
       margin-bottom: 30px;
     }
-    .arrow-left, .arrow-right{
-      display: none;
-    }
     .packAndGoContent2{
       width: 100%;
     }
@@ -1034,9 +1090,6 @@ header {
       width: 100%;
       margin-top: 40px;
     }
-    .OtherCountry{
-      flex-direction: column;
-    }
     .values h2{
       text-align: center;
     }
@@ -1057,11 +1110,10 @@ header {
       margin-left: 40%;
     }
   .OtherCountry{
-      height: 1500px;
       margin-top: 100px;
     }
   .OtherCountry .OtherCountryContent{
-    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
   }
   .OtherCountryContent1 , .OtherCountryContent2, .OtherCountryContent3{
@@ -1094,62 +1146,6 @@ header {
     margin-right: 50px;
   }
 } */
-
-@media screen and (max-width:746px){
-  .mainText{
-    top: 30%;
-  }
-  .mainText h1{
-    font-size: 30px;
-  }
-  .mainText h3{
-    font-size: 20px;
-  }
-  .packAndGoContent{
-    flex-direction: column;
-    margin: 0px;
-    top: 150px;
-    align-items: center;
-  }
-  .packAndGoContent1 , .packAndGoContent3, .packAndGoContent2{
-    width:60%;
-    height: auto;
-    margin-top: 100px;
-  }
-  .packAndGoImg{
-    height: 2200px;
-    width: 100%;
-    background-image: url('../images/bg1.jpg'); /* Add your image URL here */
-    background-repeat: repeat;
-  }
-  .packAndGoContent1 p , .packAndGoContent3 p{
-    margin: 20px;
-  }
-  .PackAndGoBtn1 , .PackAndGoBtn2 , .PackAndGoBtn3{
-    margin: 20px;
-  }
-  .packAndGoImg img{
-    display: none;
-  }
-  .contactUsHead{
-    font-size: 18px;
-    margin-top: 15px;
-  }
-  .valuesSpan{
-    width: 70%;
-  }
-  .valuesSpan button{
-    font-size: 12px;
-    margin: 0px;
-    padding: 0px;
-  }
-  .trans,.customer{
-    width:118px;
-  }
-  .encourage{
-    width: 170px;
-  }
-}
 
 .mobileNav{
   display: none;
@@ -1187,10 +1183,8 @@ header {
   background: #262626;
 }
 
-@media screen and (max-width:550px){
-  .mainText{
-    top: 20%;
-  }
+
+@media screen and (max-width:746px){
   header{
     background-color: #000;
     height: 50px;
@@ -1199,10 +1193,6 @@ header {
     display: block;
     width: 100%;
     z-index: 999;
-  }
-  header .logo img{
-    width: 37px;
-    height: 37px;
   }
   .navContent{
     display: none;
@@ -1213,9 +1203,6 @@ header {
   display: block;
 }
 .mobileNav ul li a{
-  display: block;
-}
-.mobileNav{
   display: block;
 }
 
@@ -1272,6 +1259,70 @@ header {
   color: #010101;
   text-decoration: none;
 }
+  .mainText{
+    top: 20%;
+  }
+  .mainText h1{
+    font-size: 30px;
+  }
+  .mainText h3{
+    font-size: 20px;
+  }
+  .packAndGoContent{
+    flex-direction: column;
+    margin: 0px;
+    top: 150px;
+    align-items: center;
+  }
+  .packAndGoContent1 , .packAndGoContent3, .packAndGoContent2{
+    width:60%;
+    height: auto;
+    margin-top: 100px;
+  }
+  .packAndGoImg{
+    height: 2200px;
+    width: 100%;
+    background: url('../images/bg1.jpg') no-repeat center; 
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .packAndGoContent1 p , .packAndGoContent3 p{
+    margin: 20px;
+  }
+  .PackAndGoBtn1 , .PackAndGoBtn2 , .PackAndGoBtn3{
+    margin: 20px;
+  }
+  .packAndGoImg img{
+    display: none;
+  }
+  .contactUsHead{
+    font-size: 18px;
+    margin-top: 15px;
+  }
+  .valuesSpan{
+    width: 70%;
+  }
+  .valuesSpan button{
+    font-size: 12px;
+    margin: 0px;
+    padding: 0px;
+  }
+  .trans,.customer{
+    width:118px;
+  }
+  .encourage{
+    width: 170px;
+  }
+  .services .serviceBoxes{
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width:550px){
+  .mainText{
+    top: 15%;
+  }
 .OtherCountry{
   margin-top: 200px;
 }
@@ -1341,7 +1392,7 @@ text-align: center;}
 @media screen and (max-width:450px){
 
   .mainText{
-    top: 16%;
+    top: 10%;
   }
   .mainText h1{
     font-size: 20px;
@@ -1385,6 +1436,10 @@ text-align: center;}
   border-width: 35px 0 35px 20px;
   border-color: transparent transparent transparent #49c4aa;
 }
+.packAndGo{
+  margin-top: 0px;
+
+}
 .packAndGoImg{
   height: 1900px;
 }
@@ -1401,6 +1456,7 @@ text-align: center;}
 }
 .valuesContain{
   float: left;
+  text-align: center;
 }
 .aboutImgLeft img {
   width: 90%;
