@@ -1429,13 +1429,14 @@ text-align: center;}
 @media screen and (max-width:450px){
 
   .mainText{
-    top: 55%;
+    top: 58%;
   }
   .mainText h1{
     font-size: 20px;
   }
   .mainText h3{
     font-size: 15px;
+    line-height: normal;
   }
   .values{
     margin-top: 0px;
