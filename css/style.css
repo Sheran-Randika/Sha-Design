@@ -98,6 +98,7 @@ header {
 }
 .mainText h3{
   text-transform: uppercase;
+  line-height: normal;
 }
 .mainBtn{
     margin-top: 10px;
@@ -1224,7 +1225,10 @@ header {
 @media screen and (max-width:746px){
   header{
     background-color: #000;
-    height: 50px;
+    height: 58px;
+  }
+  .logo img{
+    width: 40px;
   }
   .mobileNav{
     display: block;
