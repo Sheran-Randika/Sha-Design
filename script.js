@@ -68,7 +68,7 @@ arrowBtnF.forEach(btn => {
 
 const slider = document.querySelector('.slider');
 const images = document.querySelectorAll('.mainImg');
-const maxTranslate = 300;
+const maxTranslate = 200;
 
 let index = 0;
 
@@ -83,7 +83,3 @@ nextImage();
 
 // Auto-advance the slider every 3 seconds (adjust as needed)
 setInterval(nextImage, 3000);
-
-      
-
-    
