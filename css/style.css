@@ -1,5 +1,6 @@
 body, html {
-  margin: 0;
+  max-width: 1600px;
+  margin: 0 auto;
   padding: 0;
 }
 body {
@@ -78,14 +79,14 @@ header {
     height: auto;
     transition: opacity 5s ease-in-out;
 }
-@media (min-width:1590px) and (max-width: 2000px){
+/* @media (min-width:1590px) and (max-width: 2000px){
   .mainImg{
     width: 100vw;
     object-fit: cover;
     height: 100vh;
     transition: opacity 5s ease-in-out;
 }
-}
+} */
 .mainImg.active {
   opacity: 1;
 }
@@ -124,9 +125,9 @@ header {
 
 }
 .mainTitle{
-    font-weight: 900;
+    font-weight: 700;
     font-family: Montserrat;
-    font-size: 37.04pt;
+    font-size: 35.04pt;
 }
 .mainTopic{
     justify-content: center;
@@ -139,7 +140,7 @@ header {
 }
 .mainPara{
   font-family: lato;
-  font-size: 17.78pt;
+  font-size: 13.78pt;
   font-style: normal;
 }
 .aboutUs {
@@ -174,22 +175,22 @@ header {
     font-family: Montserrat;
   }
   .aboutContain h1{
-    font-size: 37.04pt;
-    font-weight: 900;
+    font-size: 35.04pt;
+    font-weight: 700;
     margin: 0px;
   }
   .aboutContain h2{
-    font-size: 35.04pt;
-    font-weight: 600;
+    font-size: 34.04pt;
+    font-weight: 500;
     margin-top: 10px;
     margin-bottom: 10px;
   }
   .aboutContain p{
     text-align: justify;
     text-align-last: left;
-    width: 547px;
+    width: 577px;
     font-family: lato;
-    font-size: 17.78pt;
+    font-size: 15.78pt;
   }
 
   .aboutBtn{
@@ -219,11 +220,11 @@ header {
     line-height: 26.67pt;
   }
   .serviceContent h1{
-    font-size: 37.04pt;
+    font-size: 35.04pt;
   }
   .serviceContent p{
     font-family: lato;
-    font-size: 17.78pt;
+    font-size: 15.78pt;
     line-height: 26.67pt;
   }
   .services{
@@ -258,8 +259,8 @@ header {
     overflow-x: auto;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 125px;
+    margin-right: 125px;
     height: 650px;
   }
   .serviceBoxes::-webkit-scrollbar {
@@ -284,11 +285,11 @@ header {
     margin: 20px;
     line-height: 26.67pt;
     font-family: lato;
-    font-size: 17.78pt;
+    font-size: 15.78pt;
   }
   .serviceBtn{
   position: relative;
-  bottom: 14px; 
+  bottom: -16px; 
   padding: 10px 30px;
   border: none;
   border-radius: 5px;
@@ -343,13 +344,14 @@ header {
 }
 
   .packAndGoHead h1{
-    font-size: 37.04pt;
-    font-weight: 900;
+    font-size: 35.04pt;
+    font-weight: 700;
   }
 
   .packAndGoHead h2{
     font-weight: 500;
-    font-size: 37.04pt;
+    font-size: 35.04pt;
+    margin: -17px;
   }
   .packAndGoHead,
   .packAndGoContent {
@@ -444,7 +446,7 @@ header {
     padding-left: 50px;
     padding-right: 50px;
     margin: 20px;
-    font-size: 17pt;
+    font-size: 15pt;
     line-height: 26.67pt;
     font-family: lato;
   }
@@ -454,8 +456,10 @@ header {
   }
 
   .packAndGoContent h3{
-    font-weight: 900;
-    font-size: 28pt;
+    font-weight: 700;
+    font-size: 25pt;
+    margin-top: -25px;
+    margin-bottom: 10px;
   }
   .PackAndGoBtn1 , .PackAndGoBtn3{
     margin-right: 100px;
@@ -516,7 +520,7 @@ header {
     border: none;
     position: relative;
   width: 220px; /* Adjust the width of the rectangle */
-  font-size: 22.22pt;
+  font-size: 17.22pt;
   font-family: Montserrat;
 
   }
@@ -536,7 +540,7 @@ header {
     border: none;
     position: relative;
   width: 270px; /* Adjust the width of the rectangle */
-  font-size: 22.22pt;
+  font-size: 17.22pt;
   z-index: -1;
   font-family: Montserrat;
   }
@@ -555,7 +559,7 @@ header {
     height: 70px;
     border: none;
     position: relative;
-  font-size: 22.22pt;
+  font-size: 17.22pt;
   z-index: -2;
   margin-left: 30px;
   font-family: Montserrat;
@@ -567,7 +571,7 @@ header {
     text-align: justify;
     line-height: 26.67pt;
     font-family: lato;
-    font-size: 17.78pt;
+    font-size: 15.78pt;
   }
   .valuesBtn{
     margin-top: 30px;
@@ -579,15 +583,15 @@ header {
     background-color: #f9e03b;
     color: #000;
     font-size: 15.13pt;
-    font-weight: 200px;
+    font-weight: bold;
     text-transform: uppercase;
     cursor: pointer;
     font-family: Montserrat;
   }
 
   .values h2{
-    font-weight: 900;
-    font-size: 37.04pt;
+    font-weight: 700;
+    font-size: 35.04pt;
     margin-top: 0px;
     margin-bottom: 80px;
   }
@@ -648,12 +652,12 @@ header {
 }
 
   .OtherCountry h2{
-    font-size: 37.04pt;
+    font-size: 35.04pt;
     justify-content: center;
     align-items: center;
     text-align: center;
     padding-top: 80px;
-    font-weight: 900;
+    font-weight: 700;
   }
 
   .OtherCountryContent{
@@ -696,7 +700,7 @@ header {
     background-color: #f9e03b;
     color: #000;
     font-size: 15.13pt;
-    font-weight: 200px;
+    font-weight: bold;
     text-transform: uppercase;
     cursor: pointer;
     display: flex;
@@ -707,7 +711,7 @@ header {
   .OtherCountry h3{
     margin: 50px;
     font-weight: bold;
-    font-size: 25pt;
+    font-size: 22pt;
   }
   .paginationcontainer {
     text-align: center;
@@ -758,13 +762,13 @@ header {
   }
 
   .contactUsHead {
-    font-size: 37.04pt;
+    font-size: 34.04pt;
     font-weight: bold;
     margin: 0px;
   }
   .contactUsHead h3{
     font-weight: lighter;
-    font-size: 37.04pt;
+    font-size: 34.04pt;
     margin-top: -40px;
   }
 
@@ -1008,8 +1012,8 @@ header {
     margin-right: 100px;
   }
   .services .serviceBoxes{
-    margin-left: 175px;
-    margin-right: 175px;
+    margin-left: 178px;
+    margin-right: 178px;
     height: 750px;
   }
   .serviceBoxes{
@@ -1031,14 +1035,17 @@ header {
     margin: 20px;
   }
   .serviceBox2 .serviceBtn{
-    bottom: 14px;
+    bottom: -17px;
   }
   .serviceBox3 .serviceBtn{
-    bottom: 50px;
+    bottom: 21px;
+  }
+  .serviceContent p {
+    font-size: 13.78pt;
   }
   .packAndGoContent1  , .packAndGoContent3{
     width: 300px;
-    height: 500px;
+    height: 480px;
     border-radius: 10px;
     background-color: #eaeaea;
     text-align: center;
@@ -1051,7 +1058,7 @@ header {
   .packAndGoContent2 {
     position: relative;
     width: 380px;
-    height: 577px;
+    height: 530px;
     border-radius: 10px;
     background-color: #eaeaea;
     text-align: center;
@@ -1093,13 +1100,13 @@ header {
     margin: 5px;
   }
   .packAndGoContent h3{
-    font-weight: 900;
-    font-size: 25pt;
+    font-size: 22pt;
     margin-top: 0px;
     margin-bottom: 10px;
   }
   .packAndGoContent h4{
     margin-bottom: 10px;
+    font-size: 18pt;
   }
   .PackAndGoBtn1 , .PackAndGoBtn2 , .PackAndGoBtn3{
     margin-left: 42px;
@@ -1116,6 +1123,10 @@ header {
   }
   .values {
     margin-top: 150px;
+}
+.values h2 {
+  font-size: 34.04pt;
+  margin-bottom: 44px;
 }
   .valuesImg img{
     width: 300px;
@@ -1140,7 +1151,7 @@ header {
     font-size: larger;
   }
   .OtherCountry{
-    margin-top: 750px;
+    margin-top: 675px;
   }
   .OtherCountryContent1, .OtherCountryContent2, .OtherCountryContent3{
     width: 300px;
@@ -1156,6 +1167,7 @@ header {
     margin-top: 40px;
     margin-left: 15px;
     margin-right: 15px;
+    font-size: 20pt;
   }
   .OtherCountryBtn{
     margin-right: 40px;
@@ -1168,6 +1180,9 @@ header {
   }
   .contactUsDetails1Text{
     padding-left: 50px;
+  }
+  .contactUsHead{
+    font-size: 28pt;
   }
 }
 
@@ -1471,8 +1486,11 @@ header {
     bottom: -70px;
 }
   .contactUsHead{
-    font-size: 20pt;
+    font-size: 18pt;
     margin-top: -10px;
+  }
+  .contactUsHead h3{
+    font-size: 30.04pt;
   }
   .valuesSpan{
     width: 70%;
@@ -1510,8 +1528,8 @@ header {
     font-size: 17pt;
   }
   .packAndGoContent1 h3, .packAndGoContent3 h3{
-    font-size: 25pt;
-    font-weight: 900;
+    font-size: 22pt;
+    font-weight: 700;
   }
   .packAndGoContent1 h4, .packAndGoContent3 h4{
     font-size: 20pt;
