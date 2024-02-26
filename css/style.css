@@ -1647,11 +1647,41 @@ text-align: center;}
     font-size: 15px;
     line-height: normal;
   }
+  .mainTitle {
+    font-size: 30.04pt;
+}
+.mainPara {
+  font-size: 15pt;
+}
+.aboutContain h1, .aboutContain h2 {
+  font-size: 30.04pt;
+}
+.aboutContain p {
+  font-size: 16pt;
+}
+.serviceContent h1 {
+  font-size: 30.04pt;
+}
+.serviceContent p {
+  font-size: 15pt;
+}
+.serviceBox1 p, .serviceBox2 p, .serviceBox3 p {
+  font-size: 15pt;
+}
   .values{
     margin-top: 350px;
   }
+  .values h2 {
+    font-size: 30.04pt;
+}
   .serviceBox1, .serviceBox2, .serviceBox3 {
     width: 350px;
+}
+.packAndGoHead h1, .packAndGoHead h2 {
+  font-size: 30.04pt;
+}
+.packAndGoContent1 p, .packAndGoContent3 p {
+  font-size: 15pt;
 }
 .OtherCountry{
   margin-top: 230px;
@@ -1736,6 +1766,9 @@ text-align: center;}
 .contactUsHead h3{
   font-size: 24pt;
   margin-top: -30px;
+}
+.OtherCountry h2 {
+  font-size: 30.04pt;
 }
 }
 @media screen and (max-width:400px){
