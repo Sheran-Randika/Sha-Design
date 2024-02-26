@@ -83,3 +83,4 @@ nextImage();
 
 // Auto-advance the slider every 3 seconds (adjust as needed)
 setInterval(nextImage, 3000);
+

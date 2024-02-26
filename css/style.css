@@ -1211,7 +1211,7 @@ header {
     .serviceBox1,.serviceBox2,.serviceBox3{
       background-color: #eaeaea;
       width: 383px;
-      height: 634px;
+      height: 485px;
       border-radius: 15px;
       position: relative;
       margin-bottom: 30px;
@@ -1486,6 +1486,7 @@ header {
   }
   .serviceBox1, .serviceBox2, .serviceBox3 {
     width: 465px;
+    height: 460px;
   }
   .OtherCountryContent1, .OtherCountryContent2, .OtherCountryContent3{
   margin-left: 37PX;
