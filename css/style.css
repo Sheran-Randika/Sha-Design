@@ -176,13 +176,13 @@ header {
     font-family: Montserrat;
   }
   .aboutContain h1{
-    font-size: 35.04pt;
-    font-weight: 700;
+    font-size: 34.04pt;
+    font-weight: 600;
     margin: 0px;
   }
   .aboutContain h2{
-    font-size: 34.04pt;
-    font-weight: 500;
+    font-size: 33.04pt;
+    font-weight: 400;
     margin-top: 10px;
     margin-bottom: 10px;
   }
@@ -192,6 +192,7 @@ header {
     width: 577px;
     font-family: lato;
     font-size: 15.78pt;
+    line-height: 23pt;
   }
 
   .aboutBtn{
@@ -221,7 +222,8 @@ header {
     line-height: 26.67pt;
   }
   .serviceContent h1{
-    font-size: 35.04pt;
+    font-size: 34.04pt;
+    font-weight: 600;
   }
   .serviceContent p{
     font-family: lato;
@@ -345,13 +347,13 @@ header {
 }
 
   .packAndGoHead h1{
-    font-size: 35.04pt;
+    font-size: 34.04pt;
     font-weight: 700;
   }
 
   .packAndGoHead h2{
     font-weight: 500;
-    font-size: 35.04pt;
+    font-size: 34.04pt;
     margin: -17px;
   }
   .packAndGoHead,
@@ -592,7 +594,7 @@ header {
 
   .values h2{
     font-weight: 700;
-    font-size: 35.04pt;
+    font-size: 34.04pt;
     margin-top: 0px;
     margin-bottom: 80px;
   }
@@ -653,7 +655,7 @@ header {
 }
 
   .OtherCountry h2{
-    font-size: 35.04pt;
+    font-size: 34.04pt;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -763,7 +765,7 @@ header {
   }
 
   .contactUsHead {
-    font-size: 34.04pt;
+    font-size: 33.04pt;
     font-weight: bold;
     margin: 0px;
   }
