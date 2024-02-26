@@ -1638,6 +1638,9 @@ text-align: center;}
   margin-top: 0px;
 
 }
+.arrow-left, .arrow-right {
+  top: 72%;
+}
 .packAndGoImg{
   height: 1900px;
 }

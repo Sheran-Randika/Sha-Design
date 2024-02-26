@@ -11,7 +11,7 @@ window.addEventListener('scroll', function() {
     const isScrollingDown = scrollTop > lastScrollTop;
 
     if (window.innerWidth <= 746) {
-        header.style.backgroundColor = isScrollingDown ? '#000' : '#0d0808bd';
+        header.style.backgroundColor = isScrollingDown ? '#000' : '#000';
         mobileNav.style.display = isScrollingDown ? 'block' : 'block'; 
         navFirst.style.display = isScrollingDown ? 'none' : 'none';
         navSecond.style.display = isScrollingDown ? 'none' : 'none';
