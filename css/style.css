@@ -8,6 +8,7 @@ body {
 }
 
 header {
+  max-width: 1600px;
     width: 100%;
     background-color: #0d0808bd;
     z-index: 999;
