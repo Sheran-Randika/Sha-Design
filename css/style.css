@@ -1,6 +1,7 @@
 body, html {
   margin: 0 auto;
   padding: 0;
+  transition: background-color 0.5s ease;
 }
 body {
     font-family: Montserrat;

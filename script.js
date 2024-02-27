@@ -82,11 +82,10 @@ var swiper = new Swiper(".card_slider", {
   });
 
   var swiper = new Swiper(".mySwiper", {
-    spaceBetween: 30,
     centeredSlides: true,
     autoplay: {
       delay: 2500,
-      disableOnInteraction: false,
     },
+    speed: 1200,
   });
 
