@@ -251,25 +251,53 @@ header {
     margin: 0 auto;
   }
   
+  .swiper-slide_main{
+
+  }
+
   .swiper-slide{
     scroll-snap-align: start;
+    display: flex;
     flex-direction: column;
-    background-color: #eaeaea;
+    /* background-color: #eaeaea; */
     border-radius: 15px;
     text-align: center;
+    height: 53vh;
+    /* border:2px solid blue; */
+   
   }
+
+  .serviceContent_sub{
+    background-color: #eaeaea !important;
+    margin-bottom: 0 !important;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+  }
+
+ 
   .swiper-slide p{
+    box-sizing: border-box;
+    padding-top: 5vh;
+    background-color: #eaeaea;
     padding-left: 23px;
     padding-right: 23px;
-    margin: 20px;
+    height:40vh;
     line-height: 30px;
     font-family: lato;
     font-size: 14px;
     font-weight: normal;
+    margin-top: 0 !important;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    /* border:1px solid red; */
+    
   }
+
+ 
   .serviceBtn{
   position: relative;
-  bottom: -40px; 
+    top: -5vh;
+  /* bottom: 92px;  */
   padding: 10px 30px;
   border: none;
   border-radius: 5px;
@@ -284,8 +312,8 @@ header {
   z-index: 2;
   }
   #serviceContent{
-    height: 515px;
-    /* border:1px solid red; */
+    /* height: 515px; */
+    /* height: 55vh; */
   }
   .swiper-wrapper h2{
     background-color: #f0d839;
@@ -295,6 +323,7 @@ header {
   width: calc(100% + 8px);
     height: 82px;
     margin: 10px -4px;
+    margin-bottom: 0;
     font-size: 16px;
     font-weight: bold;
   }
@@ -766,7 +795,6 @@ header {
 .contactUs .social-icons .icon:hover {
   color: #e74c3c; 
 }
-
 .footer{
   width: 100%;
   height: 150px;
@@ -776,7 +804,6 @@ header {
   align-items: center;
   text-align: center;
   font-family: lato;
-
 }
 .footer p{
   width:425px ;
@@ -813,9 +840,6 @@ header {
 .slider_container .container {
   padding: 1px 50px;
   margin: -50px 50px;
-}
-.serviceBtn{
-  bottom: 0px;
 }
 .packAndGoContent{
   margin-left: 10px;
@@ -1356,7 +1380,6 @@ text-align: center;}
  height: 2000px;
 }
 .PackAndGoBlueLine::before {
-  
   width: 100%;
 }
 .mainTopic{
@@ -1543,5 +1566,8 @@ text-align: center;}
 .serviceContent p {
   margin-left: 70px;
   margin-right: 70px;
+}
+.swiper-slide p{
+  padding-top: 3vh;
 }
 }
