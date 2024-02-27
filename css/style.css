@@ -277,11 +277,11 @@ header {
  
   .swiper-slide p{
     box-sizing: border-box;
-    padding-top: 5vh;
+    padding-top: 15px;
     background-color: #eaeaea;
     padding-left: 23px;
     padding-right: 23px;
-    height:40vh;
+    height:auto;
     line-height: 30px;
     font-family: lato;
     font-size: 14px;
