@@ -285,6 +285,7 @@ header {
   }
   #serviceContent{
     height: 515px;
+    /* border:1px solid red; */
   }
   .swiper-wrapper h2{
     background-color: #f0d839;
