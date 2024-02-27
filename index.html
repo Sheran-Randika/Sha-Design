@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Sha Solutions</title>
 </head>
@@ -69,16 +70,27 @@
     </header>
 </body>
 <div class="main" id="main">
-    <div class="slider">
-        <img class="mainImg" src="images/slider1.jpg" alt="image">
-        <img class="mainImg" src="images/slider2.jpg" alt="image">
-        <img class="mainImg" src="images/slider3.jpg" alt="image">
+    <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><img class="mainImg" src="images/slider1.jpg" alt="image"> <div class="mainText">
+            <h1>Explore Sri Lanka</h1>
+            <h3>An experience like no other!</h3>
+            <button class="mainBtn">Read More</button>
+        </div></div>
+        <div class="swiper-slide"><img class="mainImg" src="images/slider2.jpg" alt="image"> <div class="mainText">
+            <h1>Explore Sri Lanka</h1>
+            <h3>An experience like no other!</h3>
+            <button class="mainBtn">Read More</button>
+        </div></div>
+        <div class="swiper-slide"><img class="mainImg" src="images/slider3.jpg" alt="image"> <div class="mainText">
+            <h1>Explore Sri Lanka</h1>
+            <h3>An experience like no other!</h3>
+            <button class="mainBtn">Read More</button>
+        </div></div>
     </div>
-    <div class="mainText">
-        <h1>Explore Sri Lanka</h1>
-        <h3>An experience like no other!</h3>
-        <button class="mainBtn">Read More</button>
+    
     </div>
+   
 </div>
 <diV class="mainTopic">
     <h1 class="mainTitle">Who we are</h1>
@@ -113,7 +125,7 @@
         </div>
     </div>
 </div>
-<div class="services" id="services">
+<div class="slider_container" id="services">
     <diV class="serviceContent">
         <h1>Services</h1>
         <p>Feel luxurious whilst we do all the hard work for you. We will give you a full service where all your needs
@@ -121,50 +133,84 @@
             Our strong partner network allows us to offer the following services, guaranteeing you, value for money.
         </p>
     </diV>
-    <div class="arrow-left"><i id="left" class="uil uil-angle-left-b"></i></div>
-    <diV class="serviceBoxes">
-        
-        <div class="serviceBox1">
-            <img src="images/hsi1.png" alt="image">
-            <h2>Airline ticketing</h2>
-            <p>We are committed to providing you with speedy & comprehensive airline ticketing services consisting of
-                consolidator fares,
-                through our long-standing relationships with all leading inbound and outbound air travel operators of
-                Sri Lanka.<br><br><br>
-            </p>
-            <button class="serviceBtn">Read More</button>
-        </div>
-        <div class="serviceBox2">
-            <img src="images/hsi2.png" alt="image">
-            <h2>Visa Handling </h2>
-            <p>We provide assistance in obtaining visa for your travels
-                inbound and outbound with the best possible options for flexibility and a hassle free service to you.<br><br><br><br><br>
-            </p>
-            <button class="serviceBtn">Read More</button>
-        </div>
-        <div class="serviceBox3">
-            <img src="images/hsi3.png" alt="image">
-            <h2>Airport transfers and
-                domestic tours
-            </h2>
-            <p>We give you 24x7 access to private, reliable and best value airport transfer services so you can rest
-                easy and feel confident. We are specialized in arranging domestic
-                tours and are well connected to getting you the best offer from our network of service providers.<br><br><br>
-            </p>
-            <button class="serviceBtn">Read More</button>
-        </div>
-        <div class="serviceBox1">
-            <img src="images/hsi1.png" alt="image">
-            <h2>Airline ticketing</h2>
-            <p>We are committed to providing you with speedy & comprehensive airline ticketing services consisting of
-                consolidator fares,
-                through our long-standing relationships with all leading inbound and outbound air travel operators of
-                Sri Lanka.<br><br><br>
-            </p>
-            <button class="serviceBtn">Read More</button>
+    <diV class="container">
+        <div class="swiper card_slider">
+            <div class="swiper-wrapper">
+                <div id="serviceContent" class="swiper-slide">
+                    <img src="images/hsi1.png" alt="image">
+                    <h2>Airline ticketing</h2>
+                    <p>We are committed to providing you with speedy & comprehensive airline ticketing services
+                        consisting of
+                        consolidator fares,
+                        through our long-standing relationships with all leading inbound and outbound air travel
+                        operators of
+                        Sri Lanka.<br><br><br>
+                    </p>
+                    <button class="serviceBtn">Read More</button>
+                </div>
+                <div id="serviceContent" class="swiper-slide">
+                    <img src="images/hsi2.png" alt="image">
+                    <h2>Visa Handling </h2>
+                    <p>We provide assistance in obtaining visa for your travels
+                        inbound and outbound with the best possible options for flexibility and a hassle free service to
+                        you.<br><br><br><br><br>
+                    </p>
+                    <button class="serviceBtn">Read More</button>
+                </div>
+                <div id="serviceContent" class="swiper-slide">
+                    <img src="images/hsi3.png" alt="image">
+                    <h2>Airport transfers and
+                        domestic tours
+                    </h2>
+                    <p>We give you 24x7 access to private, reliable and best value airport transfer services so you can
+                        rest
+                        easy and feel confident. We are specialized in arranging domestic
+                        tours and are well connected to getting you the best offer from our network of service
+                        providers.<br><br><br>
+                    </p>
+                    <button class="serviceBtn">Read More</button>
+                </div>
+                <div id="serviceContent" class="swiper-slide">
+                    <img src="images/hsi1.png" alt="image">
+                    <h2>Airline ticketing</h2>
+                    <p>We are committed to providing you with speedy & comprehensive airline ticketing services
+                        consisting of
+                        consolidator fares,
+                        through our long-standing relationships with all leading inbound and outbound air travel
+                        operators of
+                        Sri Lanka.<br><br><br>
+                    </p>
+                    <button class="serviceBtn">Read More</button>
+                </div>
+                <div id="serviceContent" class="swiper-slide">
+                    <img src="images/hsi1.png" alt="image">
+                    <h2>Airline ticketing</h2>
+                    <p>We are committed to providing you with speedy & comprehensive airline ticketing services
+                        consisting of
+                        consolidator fares,
+                        through our long-standing relationships with all leading inbound and outbound air travel
+                        operators of
+                        Sri Lanka.<br><br><br>
+                    </p>
+                    <button class="serviceBtn">Read More</button>
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/hsi1.png" alt="image">
+                    <h2>Airline ticketing</h2>
+                    <p>We are committed to providing you with speedy & comprehensive airline ticketing services
+                        consisting of
+                        consolidator fares,
+                        through our long-standing relationships with all leading inbound and outbound air travel
+                        operators of
+                        Sri Lanka.<br><br><br>
+                    </p>
+                    <button class="serviceBtn">Read More</button>
+                </div>
+            </div>
+            <div class="arrow-left"><i id="left" class="uil uil-angle-left-b"></i></div>
+            <div class="arrow-right"><i id="right" class="uil uil-angle-right-b"></i></div>
         </div>
     </diV>
-    <div class="arrow-right"><i id="right" class="uil uil-angle-right-b"></i></div>
 </div>
 <div class="packAndGo" id="packAndGo">
     <diV class="packAndGoImg">
@@ -226,32 +272,40 @@
         <button class="valuesBtn">Read More</button>
     </div>
 </div>
-<diV class="OtherCountry" id="OtherCountry">
+<diV class="container" id="OtherCountry">
     <h2>Other countries</h2>
-    <div class="arrow-button left"><i id="left" class="uil uil-angle-left-b"></i></div>
-    <div class="OtherCountryContent">
-        <div class="OtherCountryContent1">
-            <img src="images/ht4.jpg" alt="image">
-            <button class="OtherCountryBtn">Read More</button>
-            <h3>Asia and South East Asia </h3>
+    <div class="swiper card_slider">
+        <div class="swiper-wrapper">
+            <div id="OtherCountryContent" class="swiper-slide">
+                <img src="images/ht4.jpg" alt="image">
+                <button class="OtherCountryBtn">Read More</button>
+                <h3>Asia and South East Asia </h3>
+            </div>
+            <div id="OtherCountryContent" class="swiper-slide ">
+                <img src="images/ht5.jpg" alt="image">
+                <button class="OtherCountryBtn">Read More</button>
+                <h3>Europe</h3>
+            </div>
+            <div id="OtherCountryContent" class="swiper-slide ">
+                <img src="images/ht6.jpg" alt="image">
+                <button class="OtherCountryBtn">Read More</button>
+                <h3>United States of America, Canada</h3>
+            </div>
+            <div id="OtherCountryContent" class="swiper-slide ">
+                <img src="images/ht5.jpg" alt="image">
+                <button class="OtherCountryBtn">Read More</button>
+                <h3>Europe</h3>
+            </div>
+            <div id="OtherCountryContent" class="swiper-slide ">
+                <img src="images/ht6.jpg" alt="image">
+                <button class="OtherCountryBtn">Read More</button>
+                <h3>United States of America, Canada</h3>
+            </div>
         </div>
-        <div class="OtherCountryContent2">
-            <img src="images/ht5.jpg" alt="image">
-            <button class="OtherCountryBtn">Read More</button>
-            <h3>Europe</h3>
-        </div>
-        <div class="OtherCountryContent3">
-            <img src="images/ht6.jpg" alt="image">
-            <button class="OtherCountryBtn">Read More</button>
-            <h3>United States of America, Canada</h3>
-        </div>
+        <div class="arrow-left"><i id="left" class="uil uil-angle-left-b"></i></div>
+        <div class="arrow-right"><i id="right" class="uil uil-angle-right-b"></i></div>
     </div>
-    <div class="arrow-button right"><i id="right" class="uil uil-angle-right-b"></i></div>
-    <div class="paginationcontainer">
-        <span class="paginationlink active"></span>
-        <span class="paginationlink"></span>
-        <span class="paginationlink"></span>
-    </div>
+    <div id="pagination" class="swiper-pagination"></div>
 </diV>
 <div class="contactUs" id="contactUs">
     <img class="ImageC" src="images/footer.jpg" alt="image">
@@ -302,6 +356,7 @@
     <p>Development & Design by Shaweb design
         Copyright 2023, All Right Reserved</p>
 </div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="script.js"></script>
 
 </html>

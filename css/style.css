@@ -64,30 +64,17 @@ header {
 .navFirst .icon{
   padding-top: 0px;
 }
-#main{
-  position: relative;
-    overflow: hidden;
-}
-.slider{
+
+#main .swiper-slide{
   display: flex;
-  transition: transform 1s ease-in-out;
+  justify-content: center;
+  align-items: center;
 }
-.mainImg{
+#main .swiper-slide img{
     width: 100%;
     object-fit: cover;
-    height: auto;
-    transition: opacity 5s ease-in-out;
-}
-@media (min-width:1590px) and (max-width: 2000px){
-  .mainImg{
-    width: 100vw;
-    object-fit: cover;
-    height: 100vh;
-    transition: opacity 5s ease-in-out;
-}
-} 
-.mainImg.active {
-  opacity: 1;
+    height: 100%;
+    display: block;
 }
 
 .mainText{
@@ -212,78 +199,65 @@ header {
     font-family: Montserrat;
   }
 
-  .serviceContent{
+  #services{
+    margin-top: 100px;
+    height: 850px;
+  }
+  .card_slider{
     margin-top: 100px;
     margin-bottom: 100px;
-    margin-left: 300px;
-    margin-right: 300px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
     line-height: 26.67pt;
   }
   .serviceContent h1{
     font-size: 36px;
     font-weight: bold;
+    text-align: center;
   }
   .serviceContent p{
     font-family: lato;
     font-size: 16px;
     line-height: 30px;
-  }
-  .services{
-    position: relative;
-    width: 100%;
-    overflow: hidden;
+    text-align: center;
+    margin-left: 200px;
+    margin-right: 200px;
   }
   .arrow-left, .arrow-right{
     height: 50px;
     width: 50px;
     background: rgb(255, 254, 254);
-    font-size: 1.5rem;
+    font-size: 2.1rem;
     text-align: center;
     line-height: 50px;
     border-radius: 50%;
-    cursor: pointer;
     position: absolute;
-    top: 60%;
-    transform: translateY(-50%);
-    z-index: 5;
-  }
+    top: var(--swiper-navigation-top-offset, 50%);
+    margin-top: calc(0px -(var(--swiper-navigation-size) / 2));
+    z-index: 10;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
   .arrow-left{
-    left: 20px;
+    left: -15px;
   }
   .arrow-right{
-    right: 20px;
+    right: -15px;
   }
-  .services .serviceBoxes{
-    display: grid;
-    grid-auto-flow: column;
-    gap: 30px;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-    scroll-snap-type: x mandatory;
-    margin-left: 125px;
-    margin-right: 125px;
-    height: 650px;
+  .slider_container .container{
+    padding: 0 50px;
+    margin: 0 auto;
   }
-  .serviceBoxes::-webkit-scrollbar {
-    display: none;
-  }
-  .serviceBoxes .no-transition {
-    scroll-behavior: auto;
-  }
-  .serviceBox1,.serviceBox2,.serviceBox3{
+  
+  .swiper-slide{
     scroll-snap-align: start;
     flex-direction: column;
     background-color: #eaeaea;
-    width: 426px;
-    height: 489px;
     border-radius: 15px;
-    position: relative;
     text-align: center;
   }
-  .serviceBox1 p,.serviceBox2 p,.serviceBox3 p{
+  .swiper-slide p{
     padding-left: 23px;
     padding-right: 23px;
     margin: 20px;
@@ -294,7 +268,7 @@ header {
   }
   .serviceBtn{
   position: relative;
-  bottom: -16px; 
+  bottom: -40px; 
   padding: 10px 30px;
   border: none;
   border-radius: 5px;
@@ -306,8 +280,12 @@ header {
   text-transform: uppercase;
   cursor: pointer;
   font-family: Montserrat;
+  z-index: 2;
   }
-  .serviceBoxes h2{
+  #serviceContent{
+    height: 515px;
+  }
+  .swiper-wrapper h2{
     background-color: #f0d839;
     display: flex;
   align-items: center; 
@@ -318,13 +296,6 @@ header {
     font-size: 16px;
     font-weight: bold;
   }
-  /* .arrow-left, .arrow-right{
-    font-size: 50px;
-    font-weight: bold;
-    position: relative;
-    cursor: pointer;
-    color: #515050;
-  } */
   .packAndGoHead{
     margin-top: 50px;
     justify-content: center;
@@ -612,62 +583,36 @@ header {
     margin-bottom: 80px;
   }
 
-  .OtherCountry{
-    width: 100%;
+  #OtherCountry{
     height: 910px;
     background-color: #eaeaea;
     margin-top: 750px;
     position: relative;
-    overflow: hidden;
   }
 
-  .OtherCountry .arrow-button {
-    width: 30px;
-    height: 30px;
+  #OtherCountry .card_slider{
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  #OtherCountry .arrow-left, #OtherCountry .arrow-right{
+
     background-color: #49c4aa;
     position: absolute;
-    transform: translateY(-50%);
     cursor: pointer;
-    z-index: 1;
-    border-radius: 50%;
-    top: 50%;
     text-align: center;
   }
   
-  .OtherCountry .left {
-    left: 0px;
+  #OtherCountry #left {
     font-size: 25px;
     color: #ffffff;
   }
   
-  .OtherCountry .right {
-    right: 0px;
+  #OtherCountry #right {
     font-size: 25px;
     color: #ffffff;
   }
 
-  .OtherCountry .left::before,
-.OtherCountry .right::before {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 0;
-  border-style: solid;
-}
-
-.OtherCountry .right::before {
-  border-color: transparent transparent transparent #ffffff00; 
-  top: 50%;
-  left: 50%;
-}
-
-.OtherCountry .left::before {
-  border-color: transparent #ffffff00 transparent transparent; 
-  top: 50%;
-  left: 50%;
-}
-
-  .OtherCountry h2{
+  #OtherCountry h2{
     font-size: 36px;
     justify-content: center;
     align-items: center;
@@ -676,41 +621,28 @@ header {
     font-weight: bold;
   }
 
-  .OtherCountryContent{
-    display: flex;
-    justify-content: center;
-    margin-top: 80px;
-    overflow-x: auto;
-    gap: 20px;
-    scroll-behavior: smooth;
-  }
-  .OtherCountryContent::-webkit-scrollbar {
-    display: none;
-  }
-  .OtherCountryContent .no-transition {
-    scroll-behavior: auto;
-  }
-
-  .OtherCountryContent1, .OtherCountryContent2, .OtherCountryContent3{
+ #OtherCountryContent{
     scroll-snap-align: start;
-    width: 400px;
-    height: 460px;
+    width: auto;
+    height: auto;
     align-items: center;
     text-align: center;
-    position: relative;
     background-color: #ffffff;
     border-radius: 10px;
   }
 
-  .OtherCountryContent1 img, .OtherCountryContent2 img, .OtherCountryContent3 img{
-    width: 400px;
+  #OtherCountryContent img{
+    width: inherit;
     border-radius: 10px 10px 0px 0px;
   }
   .OtherCountryBtn{
     margin-top: -20px;
-    margin-right: 100px;
-    margin-left: 100px;
     padding: 10px 30px;
+    left: 180px;
+    right: 180px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
     border: none;
     border-radius: 5px;
     background-color: #f9e03b;
@@ -725,28 +657,17 @@ header {
     font-family: Montserrat;
   }
 
-  .OtherCountry h3{
+  #OtherCountryContent h3{
     margin: 50px;
     font-weight: bold;
     font-size: 24px;
   }
-  .paginationcontainer {
-    text-align: center;
-    margin-top: 70px; 
+  #pagination {
+    margin-bottom: 60px; 
   }
   
-  .paginationlink {
-    display: inline-block;
-    width: 12px; 
-    height: 12px; 
-    background-color: white; 
-    border-radius: 50%; 
-    margin: 0 5px; 
-    cursor: pointer;
-  }
-  
-  .paginationlink.active {
-    background-color: #49c4aa; 
+  #pagination.active {
+    background: #49c4aa; 
   }
   
   .contactUs{
@@ -887,25 +808,20 @@ header {
   margin-left: 250px;
   margin-right: 250px;
 }
-.serviceBox1, .serviceBox2, .serviceBox3{
-  width: 387px;
-}
-.services .serviceBoxes{
-  margin-left: 130px;
-  margin-right: 130px;
-  gap: 20px;
-  height: 700px;
-}
-.serviceBox1 .serviceBtn{
-  bottom: 14px;
+.slider_container .container {
+  padding: 1px 50px;
+  margin: -50px 50px;
 }
 .serviceBtn{
-  bottom: 15px;
+  bottom: 0px;
 }
 .packAndGoContent{
   margin-left: 10px;
   margin-right: 10px;
-
+}
+.OtherCountryBtn{
+  left: 100px;
+  right: 100px;
 }
 }
 
@@ -1018,40 +934,8 @@ header {
     top: 56%;
     left: 59%;
   }
-  .serviceContent{
-    margin-top: 100px;
-    margin-bottom: 50px;
-    margin-left: 100px;
-    margin-right: 100px;
-  }
-  .services .serviceBoxes{
-    margin-left: 178px;
-    margin-right: 178px;
+  #serviceBoxes{
     height: 650px;
-  }
-  .serviceBoxes{
-    display: flex;
-    align-items: center;
-    text-align: center;
-    position: relative;
-  }
-  .serviceBox1,.serviceBox2,.serviceBox3{
-    background-color: #eaeaea;
-    width: 405px;
-    height: 456px;
-    border-radius: 15px;
-    position: relative;
-  }
-  .serviceBox1 p,.serviceBox2 p,.serviceBox3 p{
-    padding-left: 25px;
-    padding-right: 25px;
-    margin: 20px;
-  }
-  .serviceBox2 .serviceBtn{
-    bottom: 41px;
-  }
-  .serviceBox3 .serviceBtn{
-    bottom: 42px;
   }
   .packAndGoContent1  , .packAndGoContent3{
     width: 300px;
@@ -1156,32 +1040,9 @@ header {
     width: 236px;
     font-size: larger;
   }
-  .OtherCountry{
+  #OtherCountry{
     margin-top: 450px;
     height: 800px;
-  }
-  .OtherCountryContent1, .OtherCountryContent2, .OtherCountryContent3{
-    width: 300px;
-    height: 420px;
-    margin-left: 10PX;
-    margin-right: 10PX;
-  }
-  .OtherCountryContent1 img, .OtherCountryContent2 img, .OtherCountryContent3 img{
-    width: 300px;
-    border-radius: 10px 10px 0px 0px;
-  }
-  .OtherCountry h3 {
-    margin-top: 40px;
-    margin-left: 15px;
-    margin-right: 15px;
-  }
-  .OtherCountry h2 {
-    padding-top: 60px;
-  }
-  .OtherCountryBtn{
-    margin-right: 40px;
-    margin-left: 40px;
-    padding: 10px 40px;
   }
   .contactUsDetails1Img img{
     width: 40px;
@@ -1190,6 +1051,9 @@ header {
   .contactUsDetails1Text{
     padding-left: 50px;
   }
+  #pagination {
+    margin-bottom: 30px;
+}
 }
 
 @media screen and (max-width:950px) {
@@ -1201,20 +1065,8 @@ header {
     .aboutImgRight {
       flex-basis: 100%;
     }
-    .services .serviceBoxes {
-      margin-left: 80px;
-      margin-right: 80px;
-    }
-    .serviceBoxes{
-      flex-direction: column;
-    }
-    .serviceBox1,.serviceBox2,.serviceBox3{
-      background-color: #eaeaea;
-      width: 383px;
+    #serviceBoxes{
       height: 485px;
-      border-radius: 15px;
-      position: relative;
-      margin-bottom: 30px;
     }
     .packAndGoContent1 , .packAndGoContent3{
       width: 30%;
@@ -1274,25 +1126,14 @@ header {
       margin-right: 40%;
       margin-left: 40%;
     }
-  .OtherCountry{
+  #OtherCountry{
       margin-top: 100px;
     }
-  .OtherCountry .OtherCountryContent{
-    justify-content: flex-start;
-    align-items: center;
-    gap: 1px;
-  }
-  .OtherCountryContent1 , .OtherCountryContent2, .OtherCountryContent3{
-    margin-bottom: 30px;
-  }
   .contactUsDetails{
     flex-direction: column;
     height: 350px;
     align-items: center;
     text-align: center;
-  }
-  .serviceBox2 .serviceBtn{
-    bottom: 20px;
   }
   .contactUs .social-icons{
     margin-top: 200px;
@@ -1300,23 +1141,11 @@ header {
   .contactUsHead{
     font-size: 25pt;
   }
-
+  #pagination {
+    margin-bottom: 50px;
 }
 
-/* @media screen and (max-width:1500px)
-{
-  .mainText{
-    top: 30%;
-  }
-
-  .valuesImg{
-    margin-left: 30px;
-  }
-  .valuesContain{
-    width: 650px;
-    margin-right: 50px;
-  }
-} */
+}
 
 .mobileNav{
   display: none;
@@ -1442,6 +1271,10 @@ header {
   .mainText h3{
     font-size: 20px;
   }
+  .serviceContent p{
+    margin-left: 100px;
+    margin-right: 100px;
+  }
   .packAndGoContent{
     flex-direction: column;
     margin: 0px;
@@ -1479,19 +1312,13 @@ header {
     margin-right: 30%;
     margin-left: 36%;
 }
-
-  .services .serviceBoxes{
-    margin-left: 130px;
-    margin-right: 130px;
+  #OtherCountry{
+    margin-top: 30px;
+    height: 950px;
   }
-  .serviceBox1, .serviceBox2, .serviceBox3 {
-    width: 465px;
-    height: 460px;
-  }
-  .OtherCountryContent1, .OtherCountryContent2, .OtherCountryContent3{
-  margin-left: 37PX;
-    margin-right: 35PX;
-  }
+  #pagination {
+    margin-bottom: 80px;
+}
 }
 
 @media screen and (max-width:550px){
@@ -1519,16 +1346,9 @@ align-items: center;
 justify-content: center;
 text-align: center;}
 
-.serviceContent{
-  margin-top: 150px;
-}
-.services .serviceBoxes {
-  margin-left: 50px;
-  margin-right: 50px;
-}
-.serviceBox1, .serviceBox2, .serviceBox3 {
-  width: 450px;
-  height: auto;
+.slider_container .container {
+  padding: 0px 0px;
+  margin: -40px 50px;
 }
 .packAndGoImg{
  height: 2000px;
@@ -1575,13 +1395,20 @@ text-align: center;}
   margin-right: 20%;
   margin-left: 33%;
 }
-.OtherCountryContent1, .OtherCountryContent2, .OtherCountryContent3 {
-  margin-left: 116PX;
-  margin-right: 15PX;
+#OtherCountry{
+  margin-top: 30px;
+  height: 850px;
+}
+#OtherCountry .card_slider{
+  margin-left: 50px;
+  margin-right: 50px;
 }
 .contactUsHead {
   font-size: 18pt;
   margin-top: -22px;
+}
+#pagination {
+  margin-bottom: 50px;
 }
 }
 @media screen and (max-width:450px){
@@ -1600,12 +1427,14 @@ text-align: center;}
   .values{
     margin-top: 150px;
   }
-  .serviceBox1, .serviceBox2, .serviceBox3 {
-    width: 350px;
-}
 
-.OtherCountry{
-  margin-top: 230px;
+#OtherCountry{
+  margin-top: 210px;
+  height: 850px;
+}
+#OtherCountry .card_slider{
+  margin-left: 20px;
+  margin-right: 20px;
 }
 .valuesSpan{
   flex-direction: column;
@@ -1634,12 +1463,13 @@ text-align: center;}
   border-width: 35px 0 35px 20px;
   border-color: transparent transparent transparent #49c4aa;
 }
+#services {
+  margin-top: 300px;
+  height: 940px;
+}
 .packAndGo{
   margin-top: 0px;
 
-}
-.arrow-left, .arrow-right {
-  top: 72%;
 }
 .packAndGoImg{
   height: 1900px;
@@ -1670,19 +1500,12 @@ text-align: center;}
   top: 100%;
   width: 90%;
 }
-.serviceContent {
-  margin-top: 400px;
-}
 .contactUsDetails{
   margin-left: 242px;
 }
 .PackAndGoBlueLine::before {
   bottom: -10px;
   height: 250px;
-}
-.OtherCountryContent1, .OtherCountryContent2, .OtherCountryContent3 {
-  margin-left: 40PX;
-  margin-right: 40PX;
 }
 .contactUsHead h2 {
   font-size: 26px;
@@ -1694,6 +1517,9 @@ text-align: center;}
   margin-left: 30px;
   margin-right: 30px;
 }
+#pagination {
+  margin-bottom: 80px;
+}
 }
 @media screen and (max-width:400px){
   .mainText {
@@ -1702,21 +1528,18 @@ text-align: center;}
 .mainBtn {
   font-size: 10.13pt;
 }
-  .services .serviceBoxes {
-    margin-left: 15px;
-    margin-right: 15px;
-}
 .aboutContain {
   top: 150%;
 }
-.serviceContent {
-  margin-top: 600px;
-}
-.serviceContent {
-  margin-left: 70px;
-  margin-right: 70px;
-}
 .aboutBtn{
   margin-right: 100px;
+}
+#services {
+  margin-top: 500px;
+  height: 1000px;
+}
+.serviceContent p {
+  margin-left: 70px;
+  margin-right: 70px;
 }
 }

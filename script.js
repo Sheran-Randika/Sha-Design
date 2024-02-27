@@ -44,43 +44,49 @@ window.addEventListener('resize', function() {
 });
 
 
-const arrowBtn  = document.querySelectorAll(".OtherCountry i");
-const OtherCountryContent = document.querySelector(".OtherCountryContent");
-const firstCardWidth = OtherCountryContent.querySelector(".OtherCountryContent1").offsetWidth;
 
-arrowBtn.forEach(btn => {
-    btn.addEventListener("click", () => {
-        OtherCountryContent.scrollLeft += btn.id === "left" ? -firstCardWidth : firstCardWidth ;
+var swiper = new Swiper(".card_slider", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    navigation: {
+        nextEl: ".arrow-right",
+        prevEl: ".arrow-left",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        224: {
+            slidesPerView: 1,
+          },
+        640: {
+          slidesPerView: 1,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 40,
+        },
+        950: {
+            slidesPerView: 2,
+            spaceBetween: 80,
+          },
+        1024: {
+          slidesPerView: 2,
+          spaceBetween: 80,
+        },
+        1200: {
+            slidesPerView: 3,
+          },
+      },
+  });
 
-    });
-      });
-
-const arrowBtnF  = document.querySelectorAll(".services i");
-const serviceBoxes = document.querySelector(".serviceBoxes");
-const firstCardWidthF = serviceBoxes.querySelector(".serviceBox1").offsetWidth;
-
-arrowBtnF.forEach(btn => {
-    btn.addEventListener("click", () => {
-        serviceBoxes.scrollLeft += btn.id === "left" ? -firstCardWidthF : firstCardWidthF ;
-
-    });
-      });
-
-const slider = document.querySelector('.slider');
-const images = document.querySelectorAll('.mainImg');
-const maxTranslate = 200;
-
-let index = 0;
-
-function nextImage() {
-    index = (index + 1) % images.length;
-    const translatePercentage = Math.min(index * 100, maxTranslate);
-    slider.style.transform = `translateX(-${translatePercentage}%)`;
-}
-
-// Show the first image initially
-nextImage();
-
-// Auto-advance the slider every 3 seconds (adjust as needed)
-setInterval(nextImage, 3000);
+  var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+  });
 
